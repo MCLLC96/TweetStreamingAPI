@@ -40,12 +40,12 @@ public class Tweet implements Serializable {
 	private Point location;
 
 	@Column(nullable = false)
-	private boolean valid;
+	private Boolean valid;
 
 	public Tweet() {
 	}
 
-	public Tweet(String user, String text, Point location, boolean valid) {
+	public Tweet(String user, String text, Point location, Boolean valid) {
 
 		this.user = user;
 
@@ -80,7 +80,7 @@ public class Tweet implements Serializable {
 		result = new StringBuilder();
 		result.append(this.getClass().getName()).append(" {").append("id = ").append(this.getId()).append(", user = ")
 				.append(this.getUser()).append(", text = ").append(this.getText()).append(", valid = ")
-				.append(this.isValid()).append("}");
+				.append(this.getValid()).append("}");
 
 		return result.toString();
 	}

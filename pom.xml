@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tweets</groupId>
-	<artifactId>Tweets-Consumer</artifactId>
+	<artifactId>TweetsAPI-REST</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>TweetsConsumer</name>
+	<name>TweetsAPI-REST</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
