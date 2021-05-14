@@ -12,9 +12,9 @@
 	<groupId>tweets</groupId>
 	<artifactId>TweetsAPI-REST</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>TweetsAPI-REST</name>
-	<description>Demo project for Spring Boot</description>
+	<description>TweetsAPI-REST</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
