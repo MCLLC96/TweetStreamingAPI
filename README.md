@@ -4,13 +4,21 @@ Microservicio de consumo de Tweets basado en unos criterios de configuración y 
 ## Configuración inicial
 
 1. Instale JDK Java 11 y Maven para poder lanzar la aplicación Spring Boot.
-2. Agregue al fichero **twitter4j.properties** las claves de API y Token de Twitter, situado en el directorio src/main/resources.
+2. Diríjase al directorio src/main/resources.
+3. Agregue al fichero **twitter4j.properties** las claves de API y Token de Twitter.
  ```
 oauth.consumerKey=*************************
 oauth.consumerSecret=**************************************************
 oauth.accessToken=**************************************************
 oauth.accessTokenSecret=*********************************************
 ```
+3. Diríjase al fichero **application.properties** y elija los parámetros por defecto que usará la aplicación para gestionar los tweets.
+```
+number.followers=1500
+languages=es,it,fr
+top.hashtags=10
+```
+
 ## Ejecución de TweetAPI-REST
 1. Aplicación Java:
 ```
