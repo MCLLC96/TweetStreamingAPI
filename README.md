@@ -12,7 +12,7 @@ oauth.consumerSecret=**************************************************
 oauth.accessToken=**************************************************
 oauth.accessTokenSecret=*********************************************
 ```
-3. Diríjase al fichero **application.properties** y elija los parámetros por defecto que usará la aplicación para gestionar los tweets.
+3. Diríjase al fichero **application.properties** y elija los parámetros por defecto que usará la aplicación para gestionar los tweets. Por defecto se guardarán aquellos tweets cuyo usuario tenga al menos 1500 seguidores, el idioma sea español, italiano o francés y finalmente de mostrará un top de hashtags con tamaño máximo 10.
 ```
 number.followers=1500
 languages=es,it,fr
@@ -29,8 +29,13 @@ $ java -jar target/TweetsAPI-REST-0.0.1-SNAPSHOT.jar
 ```
 $ mvnw spring-boot:run
 ```
-
 La aplicación se arranca por defecto en el puerto local 8080.
+
+## Acceso a la base de datos (H2)
+Una vez la aplicación haya sido desplegada, introduzca en el navegador ``/h2-console`` y acceda con las siguientes credenciales (por defecto):
+* Usuario: sa
+* Contraseña:
+
 
 ## INFO TweetAPI-REST
 ``
